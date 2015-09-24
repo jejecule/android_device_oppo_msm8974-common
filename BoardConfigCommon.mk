@@ -68,8 +68,10 @@ QCOM_BT_USE_SMD_TTY := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # CM Hardware
+# CM Hardware
 BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/cmhw
+BOARD_HARDWARE_CLASS += \
+    device/oppo/msm8974-common/cmhw
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
